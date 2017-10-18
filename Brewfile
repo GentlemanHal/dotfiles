@@ -1,5 +1,6 @@
 tap "caskroom/cask"
 
+brew "bash"
 brew "git"
 brew "gnupg"
 
