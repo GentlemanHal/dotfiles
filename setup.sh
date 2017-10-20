@@ -29,6 +29,7 @@ brew bundle
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
 
 # copy app configuration
+safe_copy .gitconfig ~/.gitconfig
 cp -R Library/. ~/Library
 
 # create directories for work and code
