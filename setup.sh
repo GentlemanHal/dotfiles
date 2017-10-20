@@ -36,5 +36,9 @@ cp -R Library/. ~/Library
 mkdir -p ~/work
 mkdir -p ~/code
 
-# clone codes
-git clone git@github.com:GentlemanHal/dotfiles.git ~/code/dotfiles
+# clone this repo
+if [ -d "$DIRECTORY" ]; then
+  cd ~/code/dotfiles && gup
+else
+  git clone git@github.com:GentlemanHal/dotfiles.git ~/code/dotfiles
+fi
