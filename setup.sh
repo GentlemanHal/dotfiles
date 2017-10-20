@@ -2,8 +2,10 @@
 
 safe_copy() {
   if [ -r $2 ]; then
+    echo "$2 already exists so backing up to $2.bak"
     mv -f $2 $2.bak
   fi
+  echo "copying $1 to $2"
   cp -f $1 $2
 }
 
