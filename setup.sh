@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 safe_copy() {
-  if [ -r $1 ]; then
-    mv -f $1 $1.bak
+  if [ -r $2 ]; then
+    mv -f $2 $2.bak
   fi
   cp -f $1 $2
 }
