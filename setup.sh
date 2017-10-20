@@ -32,3 +32,6 @@ cp -R Library/. ~/Library
 # create directories for work and code
 mkdir -p ~/work
 mkdir -p ~/code
+
+# clone codes
+git clone git@github.com:GentlemanHal/dotfiles.git ~/code/dotfiles
