@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
+safe_copy() {
+  if [ -r $1 ]; then
+    mv -f $1 $1.bak
+  fi
+  cp -f $1 $2
+}
+
 # copy bash setup
-cp ./.bash_profile ~/.bash_profile
-cp ./.bashrc ~/.bashrc
+safe_copy ./.bash_profile ~/.bash_profile
+safe_copy ./.bashrc ~/.bashrc
 
 # source the new bash profile
 . ~/.bash_profile
