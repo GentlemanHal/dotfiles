@@ -38,7 +38,7 @@ mkdir -p ~/code
 
 # clone this repo
 if [ -d ~/code/dotfiles ]; then
-  cd ~/code/dotfiles && git pull —rebase
+  cd ~/code/dotfiles && git pull --rebase
 else
   git clone git@github.com:GentlemanHal/dotfiles.git ~/code/dotfiles
 fi
