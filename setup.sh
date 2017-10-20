@@ -37,7 +37,7 @@ mkdir -p ~/work
 mkdir -p ~/code
 
 # clone this repo
-if [ -d "$DIRECTORY" ]; then
+if [ -d "~/code/dotfiles" ]; then
   cd ~/code/dotfiles && gup
 else
   git clone git@github.com:GentlemanHal/dotfiles.git ~/code/dotfiles
