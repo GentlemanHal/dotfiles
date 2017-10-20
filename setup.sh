@@ -8,14 +8,14 @@ safe_copy() {
 }
 
 # copy bash setup
-safe_copy ./.bash_profile ~/.bash_profile
-safe_copy ./.bashrc ~/.bashrc
+safe_copy .bash_profile ~/.bash_profile
+safe_copy .bashrc ~/.bashrc
 
 # source the new bash profile
 . ~/.bash_profile
 
 # copy ssh configuration
-cp -R ./.ssh/. ~/.ssh
+cp -R .ssh/. ~/.ssh
 
 # install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -27,7 +27,7 @@ brew bundle
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
 
 # copy app configuration
-cp -R ./Library/. ~/Library
+cp -R Library/. ~/Library
 
 # create directories for work and code
 mkdir -p ~/work
