@@ -30,6 +30,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | b
 
 # copy app configuration
 safe_copy .gitconfig ~/.gitconfig
+cp -R .lein ~/.lein
 cp -R Library/. ~/Library
 
 # create directories for work and code
