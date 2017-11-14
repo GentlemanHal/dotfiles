@@ -3,6 +3,7 @@ tap "caskroom/cask"
 brew "bash"
 brew "git"
 brew "gnupg"
+brew "pinentry-mac"
 
 cask "google-chrome"
 cask "vlc"
