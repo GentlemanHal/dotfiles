@@ -4,6 +4,7 @@ brew "bash"
 brew "git"
 brew "gnupg"
 brew "pinentry-mac"
+brew "direnv"
 
 cask "google-chrome"
 cask "vlc"
